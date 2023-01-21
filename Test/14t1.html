@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+    <link rel="stylesheet" href="14t1.css">
+</head>
+<body>
+
+<h1>2023 Quiz 1</h1>
+Test basic knowlege on C
+<h3 id="time"></h3> <h1 id="candy"></h1>
+
+<section id="bkgrd">
+<section id="mark"> <span id="grade"></span></section>
+</secton>
+
+<form  id="test214">
+<section>
+     <h1>Question 1 : multiple choice</h1>
+     <p>1.1 After the execution of the following fragment of code [4] <br>
+         <div>
+                 <aside>
+                    int a = 3, b = 7, c = 4; <br>
+                    x = b++ * (b - a - 1) / (--c);
+                 </aside>
+                 what will the varaible x holds?
+              </p>
+                  <label for="ff"><input type="radio" name="aaaa" id="aaaa"value="0"> 12 <br></label>
+                  <input type="radio" name="aaaa" id="aaaa"value="0"> 11.5 <br>
+                  <input type="radio" name="aaaa" id="aaaa"value="0"> 5.25  <br>
+                  <input type="radio" name="aaaa" id="aaaa" value="0"> 8 <br>
+                  <input type="radio" name="aaaa" id="onepon" value="4" > none of the above <br>
+         </div>
+
+         <div id="ans11">  The answer is "none of the above" <br> 
+                             x = b++ * (b - a - 1) / (--c) <br>
+                             x = 7++ * (7 - 3 - 1) / (--4) <br>
+                             x = 7 * ( 3 ) / (3) <br> 
+                             x = 21 / 3 <br> 
+                             x = 7</div>
+
+         <p>1.2 Given the declaration: [4] <br>
+        <div>
+                 <aside>
+                    int a = 18, b = 25;<br>
+                    b = (!a + (b++)) ? a+b : a;
+                 </aside>
+                 what value is assigned to b after the execution of the following statement:
+              </p>
+                 <input type="radio" name="aaab" id="aaab"value="0"> 25 <br>
+                 <input type="radio" name="aaab" id="aaab"value="0"> 18 <br>
+                 <input type="radio" name="aaab" id="aaab"value="0"> 43  <br>
+                 <input type="radio" name="aaab" id="oneptw"value="4" > 44 <br>
+                 <input type="radio" name="aaab" id="aaab"value="0"> none of the above <br>
+         </div>
+         
+         <div id="ans12">The answer is 44 <br>
+        I dont know why its supposed to be 43 but im guessing ++ incremented b making it 26+18 intead of  25+18</div>
+
+         <p>1.3 How many times will the following program print Success!? [4] <br>
+         <div>
+                 <aside>
+                    for (i = 1; i <= 51; i++) if (i %= 0) printf("Success!");
+                </aside>
+              </p>
+                 <input type="radio" name="aaac" id="aaac"value="0"> 24 <br>
+                 <input type="radio" name="aaac" id="aaac"value="0"> 51 <br>
+                 <input type="radio" name="aaac" id="aaac"value="0"> 25 <br>
+                 <input type="radio" name="aaac" id="aaac"value="0"> 26 <br>
+                 <input type="radio" name="aaac" id="onepth"value="4" > none of the above <br>
+         </div>
+         
+         <div id="ans13">The answer is "none of the above" <br>
+                             Putting %=(any number) will cuase the program to crash. Even %0 will make it crash </div>
+         <p>1.4 Given the following fragment of code [4] <br>
+         <div>
+            <aside>
+                int i = 8;<br>
+                switch(i)<br>
+                {<br>
+                default: ;<br>
+                case 5:<br>
+                i += 2;<br>
+                if (i==11) i -=4;<br>
+                i *=2;<br>
+                case 7:<br>
+                i +=5;<br>
+                if(i == 8)<br>
+                {<br>
+                i--;<br>
+                if (i == 9) break;<br>
+                i *=3;<br>
+                }<br>
+                i -=12;<br>
+                break;<br>
+                }<br>
+                printf("i = %d\n",i);<br>
+            </aside>
+            <p>What will be the result of its execution? </p>
+
+            
+         </p> 
+             <input type="radio" name="aaad" id="aaad"value="0"> i=1 <br>
+             <input type="radio" name="aaad" id="aaad"value="0"> i=14 <br>
+             <input type="radio" name="aaad" id="aaad"value="0"> i=30 <br>
+             <input type="radio" name="aaad" id="aaad"value="0"> i=6 <br>
+             <input type="radio" name="aaad" id="onepfo"value="4" > i=13 <br>
+    </div>
+
+    <div id="ans14">The answer is "13" <br> 
+        When writing switch statements the correct way is to write: <br>   
+         Switch (arguemnt) <br>
+         case 1 <br> 
+         case 2 <br>
+         case 3 <br>
+         default <br> 
+         But if you look at the question its : <br>
+         Switch (argument) <br>
+         default <br> 
+         case 5 <br> 
+         case 7 <br>
+         Putting the default first will cause all proceeding code to be exicuted <br>
+         i = 8 <br>
+         i = 8+2 <br>
+         i = 10*2 <br>
+         i = 20+5 <br>
+         i = 25-12 <br> 
+         i = 13  <br>
+         The others i operations  will br ignored because they are bounded to if statements and they were all not true</div>
+
+    <p>1.5 Given the following C code : [4] <br>
+    <div>
+            <aside>
+                #include <stdio.h>
+                    int main()<br>
+                    {<br>
+                    int p = 48;<br>
+                    float q = 8/2;<br>
+                    printf("The result of the operation with %d and %f is %f",p,q, p+(p/q));<br>
+                    return 0;<br>
+                    }<br>
+            </aside>
+            The output will be:
+         </p>
+            <input type="radio" name="aaae" id="aaae"  value="0"> The result of the division of 48 and 4.000000 is 60.000000 <br>
+            <input type="radio" name="aaae" id="aaae"  value="0"> The result of the division of 48.000000 is 4.000000 is 56 <br>
+            <input type="radio" name="aaae" id="aaae"  value="0"> The result of the division of 48 and 4 is 60.000000<br>
+            <input type="radio" name="aaae" id="aaae"  value="0"> The result of the division of 48 and 8.0000000 is 56.0000000<br>
+            <input type="radio" name="aaae" id="onepfi" value="4" > none of the above <br>
+    </div>
+
+    <div id="ans15"> The answer is " none of the above " <br>
+          Although the the first answer may seem correct , at the first line the "< stdio.h >" is missing , this cause the program not to run</stdio.h>" </div>
+
+    <p>1.6 There are several errors that could occur when developing a C program. An error that is not reported
+        by the compiler and not explicitly reported during execution is a: [4] <br>
+         </p>
+    <div>
+            <input type="radio" name="aaaf" id="onepsi" value="4" > Logical error <br>
+            <input type="radio" name="aaaf" id="aaaf" value="0"> Syntax error <br>
+            <input type="radio" name="aaaf" id="aaaf" value="0"> Runtime error <br>
+            <input type="radio" name="aaaf" id="aaaf" value="0"> Environment error <br>
+            <input type="radio" name="aaaf" id="aaaf" value="0"> Linking error <br>
+    </div>
+
+    <div id="ans16">Logical error  </div>
+</section>
+
+<!-- <section>
+     <h1>Question 2</h1>
+     <p>Identify and correct the errors in each of the following fragments of code:</p>
+
+     <p>(2.1) The following piece of code should print whether integer value is odd or even: [2]</p>
+         <div>
+                <aside>
+                    switch (value %2) { <br>
+                        case 0: printf("\n %d is odd",value);<br>
+                        case 1: printf("\n %lf is even",value);<br>
+                        }<br>
+                </aside> 
+                <textarea name="2.3" id="2.3" cols="35" rows="4"></textarea>
+
+                <p id="loseyou"></p>
+         </div>
+
+         <p>2.2 [2]</p>
+         <div>
+                 <aside>
+                     int sum (int x, int y) <br>
+                     { <br>
+                     int result; <br>
+                     return = x +y; <br>
+                     }   <br>
+                  </aside>
+                  <input type="text" name="2.2" id="2.2">
+         </div>
+
+         <p>2.3 The following function, Fabs, is suppose to computed and return the absolute value of a floating
+            point number: [2] </p>
+         <div>
+                 <aside>
+                     void Fabs(double x)
+                     { <br>
+                     if ( a < 0) return (-x); <br>
+                     else x; <br>
+                     } <br>
+                 </aside>
+                 <input type="text" name="2.3" id="2.3">
+         </div>
+
+         <p> 2.4 What value does function calculate return when called with a value 6? Show your working. [8]</p>
+         <div>
+                 <aside>
+                     int Calculate(int n) <br>
+                     { <br>
+                     if(n == 1) return 1; <br>
+                     else return (n+calculate(n-1)); <br>
+                     } <br>
+                 </aside>
+
+                 <input type="text" name="2.4" id="2.4">
+         </div>
+</section>
+
+<section>
+     <h1>Question 3</h1>
+     <p>The program below when completed must enable a user to enter the radius(r) of a sphere, compute and
+        display its volume (V =4/3*pi*r^3).
+     </p>
+         <aside>
+                1: # include <stdio.h>  <br>
+                2: # define PI 3.14  <br>
+                3:  <br>
+                4:  <br>
+                5: int main ()  <br>
+                6: { float radius = 0 , ans ;  <br>
+                7: input( );  <br>
+                8: ans = SphereVolume ( );  <br>
+                9: printf (" Volume : %g\n", ans );  <br>
+                10: return 0;  <br>
+                11: }  <br>
+                /* Reads in the radius of the sphere */  <br>
+                12: void input(float *radius)  <br>
+                13: {  <br>
+                14: printf (" Enter the Radius : ");  <br>
+                15: scanf ( );  <br>
+                16: }  <br>
+                /* computes and returns the volume of a sphere given its  <br>
+                radius r */  <br>
+                17: float SphereVolume ( float r)  <br>
+                18: {  <br>
+                19:  <br>
+                20:  <br>
+                21:  <br>
+                22: }  <br>
+         </aside>
+            <p>
+                 (a) Complete :  <br>
+                 – Lines 3 and 4: with functions declarations.  <br>
+                 – Line 7: that calls the function to input the radius of the sphere.  <br>
+                 – Line 8: that calls the function to compute the volume of the sphere and store it in the variable ans <br>
+                 – Lines 15: that inputs the radius of the sphere.  <br>
+                 (b) Insert the necessary instructions at Lines 19, 20 and 21 in order to use the function SphereVolume  <br>
+                 to compute and return the volume of a sphere, giving its radius(r).  <br>
+            </p>
+
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+</section> -->
+
+<button type="button" id="boss" >Submit</button>
+</form>
+<script src="14t1.js"></script>
+
+</body>
+</html>
