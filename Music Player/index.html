@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--    -->
+<section>
+    <div id="name"></div>
+
+    <audio id="music" src="jack" ></audio>
+
+      <img src="albumArt.jpg">
+
+     <div id="songName">Wena</div>
+
+     <div id="artist">Anatii</div>
+
+     <div id="volnum" hidden> 50</div>
+     <div id="volback"><input type="range" name="volume" id="slider" oninput="volnum.innerText = this.value"></div>
+     
+     <div id="top">
+         <button id="trackList"><img src="music-note.svg" class="svg" > </button>
+         <button id="volume"><img src="volume.svg" class="svg" > </button> <br>
+     </div>
+
+    <div id="seeker">
+        <input type="range" value="00"  id="lines">
+        <span id="currtime"></span>
+        <span id="endtime"></span>
+    </div>
+
+     <div id="bottom">
+        
+         <button id="shuffle"><img src="shuffle.svg"  class="svg">  </button> 
+         <button id="prevoius"><img src="skip-previous.svg"  class="svg"> </button> 
+         <button id="play"><img src="play.svg" class="svg"> </button> 
+         <button id="pause"><img src="pause.svg"  class="svg"> </button> 
+         <button id="next"><img src="skip-next.svg" class="svg"> </button>
+         <button id="repeat"><img src="repeat.svg"  class="svg"> </button>
+         <button id="norepeat"><img src="arrow-right.svg"  class="svg"> </button>
+     </div>
+</section>
+
+<script src="fire.js"></script>
+</body>
+</html>

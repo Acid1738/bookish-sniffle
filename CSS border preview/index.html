@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sytles.css">
+ 
+</head>
+<body>
+    <section id="head"><h1>CSS Broder Preview</h1>
+        
+    </section>
+
+<div id="box"></div>
+
+<section id="Text">
+         Width <br> <input type="range" oninput="wid.innerText = this.value"> <br>
+         Height <br> <input type="range" max="250" oninput="hei.innerText = this.value"> <br>
+         Top left <br> <input type="range" oninput="topl.innerText = this.value"> <br>
+         Top right: <br> <input type="range" oninput="topr.innerText = this.value"> <br>
+         Bottom left <br> <input type="range" oninput="botl.innerText = this.value"> <br>
+         Bottom right <br> <input type="range" oninput="botr.innerText = this.value"> <br>
+    
+</section>
+
+<section id="ct">
+      <p> width: <span id="wid"></span>%</p>
+      <p> height: <span id="hei"></span>%</p>
+      <p> Top Left: <span id="topl"></span>px</p>
+      <p> Top Right: <span id="topr"></span>px</p>
+      <p> Bottom Left: <span id="botl"></span>px</p>
+      <p> Bottom Right: <span id="botr"></span>px</p>
+      <button>copy css</button>
+
+</section>
+<script src="craxy.js"></script>
+</body>
+</html>

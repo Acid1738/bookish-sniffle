@@ -1,0 +1,220 @@
+section {
+    width:50vh;
+    background:rgb(238, 174, 202);
+    background: radial-gradient(circle),
+                rgba(238, 174, 202, 1) 0%,
+                rgba(148, 187, 233, 1) 100%;
+    display: block      ;
+     margin-left: auto;
+     margin-right: auto;
+     height: 95vh;
+     padding-left: 2%;
+     padding-right: 2%;
+     padding-top: 2%;
+     border-radius: 25px;
+    
+}
+
+img {
+    width: 40vh;
+    display: block      ;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 10%;
+     border-radius: 25px;
+     
+     
+}
+
+#songName {
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: xx-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
+}
+
+#artist {
+    text-align: center;
+    margin-bottom: 10%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+
+#top {
+  margin-bottom: 5%;
+}
+
+#volume {
+    float: right;
+}
+
+#volback {
+    background-color: blue;
+    border-radius: 50px;
+    width: fit-content;
+    transform: rotate(270deg);
+    position: relative;
+    left: 78%;
+    bottom: 10%;
+    z-index: 1000;
+    display: none;
+}
+
+#slider {
+    top: 50%;
+
+}
+
+i
+
+#seeker {
+    height: 20px;
+}
+
+#bottom {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+button {
+    border: none;
+    background-color:inherit;
+
+}
+.svg {
+    width: 25px;
+    height: 25px;
+}
+
+/* //music seeker slide */
+
+#lines {
+     width: 100%;
+    
+}
+
+
+#endtime {
+    float: right;
+}
+
+
+
+/*phones only*/
+/*///////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////*/
+/*/////////////////////////////////////////////////////*/
+
+
+
+@media only screen and (max-width:700px) {  
+    section {
+        width:97%;
+        background:rgb(238, 174, 202);
+        background: radial-gradient(circle),
+                    rgba(238, 174, 202, 1) 0%,
+                    rgba(148, 187, 233, 1) 100%;
+        display: block      ;
+         margin-left: auto;
+         margin-right: auto;
+         height: 95vh;
+         padding-left: 2%;
+         padding-right: 2%;
+         padding-top: 2%;
+         border-radius: 25px;
+        
+    }
+    
+    img {
+        width: 80%;
+        display: block      ;
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 10%;
+         border-radius: 25px;
+         
+         
+    }
+    
+    #songName {
+        text-align: center;
+        margin-bottom: 2%;
+        font-size: xx-large;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+    }
+    
+    #artist {
+        text-align: center;
+        margin-bottom: 40%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        
+    }
+    
+    #top {
+      margin-bottom: 15%;
+    }
+    
+    #volume {
+        float: right;
+    }
+    
+    #volback {
+        background-color: inherit;
+        border-radius: 50px;
+        width: fit-content;
+        transform: rotate(270deg);
+        position: relative;
+        left: 78%;
+        bottom: 10%;
+        z-index: 1000;
+        display: none;
+    }
+    
+    #slider {
+        top: 80%;
+    
+    }
+    
+    i
+    
+    #seeker {
+        height: 20px;
+    }
+    
+    #bottom {
+        margin-top: 20%;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+    
+    button {
+        border: none;
+        background-color:inherit;
+    
+    }
+    .svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    /* //music seeker slide */
+    
+    #lines {
+         width: 100%;
+        
+    }
+    
+    
+    #endtime {
+        float: right;
+    } 
+
+    /* *{
+        outline:1px solid red !important;
+     } */
+}
